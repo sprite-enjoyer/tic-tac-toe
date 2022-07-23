@@ -1,0 +1,32 @@
+$initial-color: #BFBDBA;
+$green: #32A69A;
+$red: #F2695C;
+
+.tile {
+
+    &__div {
+        height: 100%;
+        width: 100%;
+        align-self: center;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        background-color: $initial-color;
+    }
+    
+}
+
+.x-div{
+    background-color: $red;
+    width: 85%;
+    height: 85%;
+}
+
+.o-div{
+    background-color: $green;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+}

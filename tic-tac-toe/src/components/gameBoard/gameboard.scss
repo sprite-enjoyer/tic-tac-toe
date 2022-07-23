@@ -1,0 +1,12 @@
+$weird-gray: #403B39;
+
+.gameboard-div{
+    display:grid;
+    height: 70vh;
+    width: 70vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 0.4vw solid $weird-gray;
+    background-color: $weird-gray;
+    gap: 0.25vw 0.25vw;
+}

@@ -1,20 +1,17 @@
 import Tile from "../tile/Tile";
-import { v4 } from "uuid";
+import "./gameboard.scss";
 
 const GameBoard = ({ notifyParent }) => {
-    
     const keyArr = [];
-    for(let i = 0; i < 9; i++) keyArr.push([v4(), i]);
+    for(let i = 0; i < 9; i++) keyArr.push(i);
 
-    return(
-        <div className="gameBoard-div">
-
-            { keyArr.map(element => 
+    return (
+        <div className="gameboard-div">
+            {keyArr.map(element => 
             <Tile notifyParent={notifyParent} 
-            key={element[0]} index={element[1]} />) }
-
+            key={element} index={element} />) }
         </div>
     );
-}
+};
 
 export default GameBoard;
